@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#create-button {
+    background-color: #3498db;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#create-button:hover {
+    background-color: #2980b9;
+}
+
+#sort-asc {
+    background-color: #27ae60;
+    color: white;
+}
+
+#sort-asc:hover {
+    background-color: #219653;
+}
+
+#sort-desc {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#sort-desc:hover {
+    background-color: #c0392b;
+}
+
+#submit-button {
+    background-color: #27ae60;
+    color: white;
+}
+
+#submit-button:hover {
+    background-color: #219653;
+}
+
+#cancel-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#cancel-button:hover {
+    background-color: #c0392b;
+}
+
+/* Search Input */
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#search:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* List of Gas Stations */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button.edit {
+    background-color: #3498db;
+    color: white;
+}
+
+li button.edit:hover {
+    background-color: #2980b9;
+}
+
+li button.delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+li button.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Form Container */
+#form-container {
+    margin-bottom: 20px;
+}
+
+#tankstellen-form {
+    display: flex;
+    gap: 10px;
+}
+
+#tankstellen-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#tankstellen-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}

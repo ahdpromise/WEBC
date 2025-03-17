@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tankstellen in Köln</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Tankstellen in Köln</h1>
+        <div id="form-container" style="display: none;">
+            <form id="tankstellen-form">
+                <input type="text" id="adresse" placeholder="Adresse" required>
+                <button type="submit" id="submit-button">Speichern</button>
+                <button type="button" id="cancel-button">Abbrechen</button>
+            </form>
+        </div>
+        <button id="create-button">Tankstelle hinzufügen</button>
+        <input type="text" id="search" placeholder="Suche nach Straßennamen...">
+        <button id="sort-asc">Sortiere aufsteigend</button>
+        <button id="sort-desc">Sortiere absteigend</button>
+        <ul id="tankstellen-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
